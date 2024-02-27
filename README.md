@@ -1,7 +1,6 @@
+GraphQL Profile Page Project:
 
-Certainly! Here's a README file for your project:
 
-GraphQL Profile Page Project
 Objective
 The objective of this project is to learn the GraphQL query language by creating your own profile page. You will utilize a GraphQL endpoint provided by the platform to query your own data and populate your profile page. Additionally, you will implement a login page to authenticate with the GraphQL API.
 
