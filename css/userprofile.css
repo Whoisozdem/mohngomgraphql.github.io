@@ -1,0 +1,275 @@
+@import url(//db.onlinewebfonts.com/c/373efd69166d31c2b5052a505527acbf?family=Graphik-Medium);
+
+img {
+  width: 150px;
+  height: 150px;
+}
+
+
+.profile-info,
+.statistics {
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+  padding: 1rem;
+  width: 80%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.statistics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.statistics h2 {
+  margin-bottom: 1rem;
+}
+
+.profile-info {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.user-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.user-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .profile-info {
+    flex-direction: column;
+  }
+
+  .user-image-container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .user-image {
+    max-width: 90%;
+  }
+}
+
+.xp-widget {
+  width: 100%;
+  max-width: 400px;
+  /* margin: 0 auto; */
+  font-family: "Roboto", sans-serif;
+}
+
+.xp-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.xp-visualization {
+  width: 100%;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 2px;
+}
+
+.xp-svg {
+  width: 100%;
+  height: 20px;
+}
+
+
+.xp-ratio-display {
+  font-size: 2rem;
+  margin-top: 10px;
+  font-weight: bold;
+  color: purple;
+}
+.xp-values-display {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  width: 100%;
+}
+.xp-value {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.xp-value-label1 {
+  font-size: 1.6rem;
+  margin: 0;
+  color:rgb(207, 76, 28);
+}
+.xp-value-label2 {
+  font-size: 1.6rem;
+  margin: 0;
+  color:rgb(45, 45, 221);
+}
+.xp-value-text {
+  font-size: 1.2rem;
+  margin: 5px 0 0 0;
+  font-weight: bold;
+  color: #4a4a4a;
+}
+
+
+/* Make the chart responsive */
+#chart_div {
+  width: 100%;
+  height: auto;
+}
+
+/* Apply a bold font */
+.google-visualization-tooltip {
+  font-weight: bold;
+}
+
+/* Apply a cool font for charts */
+.google-visualization-tooltip {
+  font-family: 'Roboto', sans-serif; /* Replace 'Roboto' with your preferred cool font */
+}
+
+/* Adjust tooltip font size */
+.google-visualization-tooltip {
+  font-size: 14px;
+}
+
+@import url(//db.onlinewebfonts.com/c/373efd69166d31c2b5052a505527acbf?family=Graphik-Medium);
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("https://res.cloudinary.com/dqq1urlyx/image/upload/v1707976942/pexels-google-deepmind-18069490_i6xmd0.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.navbar {
+  background-color: rgba(255, 255, 255, 0.6); /* Navbar background color */
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1000; /* Ensure the navbar stays on top */
+}
+.navbar-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.logout-btn {
+  font-size: 1.3rem;
+margin-right: 35px;
+  padding: 10px 20px;
+  background-color: #ff3333; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.logout-btn:hover {
+  background-color: #cc0000; /* Button background color on hover */
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
+  padding: 90px 20px 20px; /* Adjusted padding to accommodate navbar */
+}
+.right-container {
+  display: grid;
+  place-items: center;
+}
+.info-container {
+  display: grid;
+  gap: 20px;
+}
+.info-item {
+  padding: 30px;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 3px solid rgba(255, 255, 255, 0.2);
+}
+.responsive-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
+  backdrop-filter: blur(20px);
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.responsive-grid > div {
+  padding: 20px;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 25px;
+}
+.full-width {
+  grid-column: span 2;
+}
+.full-length-grid {
+  width: 100%;
+  grid-column: span 2;
+  margin-left: 380px;
+}
+@media screen and (max-width: 1900px) {
+  .full-length-grid {
+      margin-left: auto; /* Reset margin-left when screen size is smaller */
+  }
+}
+.first-grid {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.second-grid {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Make the chart responsive */
+#chart_div {
+  width: 100%;
+  height: auto;
+}
+
+/* Apply a bold font */
+.google-visualization-tooltip {
+  font-weight: bold;
+}
+
+/* Apply a cool font for charts */
+.google-visualization-tooltip {
+  font-family: 'Roboto', sans-serif; /* Replace 'Roboto' with your preferred cool font */
+}
+
+/* Adjust tooltip font size */
+.google-visualization-tooltip {
+  font-size: 14px;
+}
+
+#first-name-last-name, #campus, #from, #email, #total-xp{
+  font-size: 1.5rem;
+  font-weight: bold;
+}

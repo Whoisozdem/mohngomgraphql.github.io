@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/userprofile.css" />
+    <script src="./js/userprofile.js" defer></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <title>Profile</title>
+
+</head>
+<body>
+<div class="navbar">
+    <div class="navbar-title" id="name-profile">User's Profile</div>
+    <button class="logout-btn" id="logoutBtn" onclick="logout()">Logout</button>
+</div>
+<div class="container">
+    <div class="right-container">
+        <img class="user-image" src="./images/icons8-test-account-64.png" alt="Avatar Image"/>
+    </div>
+    <div class="info-container">
+        <div class="info-item" id="first-name-last-name">Full Name:<br></div>
+        <div class="info-item" id="campus">Campus:<br></div>
+        <div class="info-item" id="from">From:<br></div>
+        <div class="info-item" id="email">Email:<br></div>
+        <div class="info-item" id="total-xp">Total XP:<br></div>
+    </div>
+    <div class="full-width">
+        <div class="grrr">
+        <div class="full-length-grid first-grid">
+            <div id="upXp"></div>
+            <div id="downXp"></div>
+          <div id="total-xp"></div>
+          <div style="background-color: white; text-align: center;align-items: center; width: 900px; font-weight: bold;">
+          <h1 class="xp-ratio-display" id="xpRatio"></h1>
+          <p class="xp-value-label1" id="upXpValue">Done:</p>
+          <p class="xp-value-label2" id="downXpValue">Received:</p>
+        </div>
+          <div id="donutchart" style="width: 900px; height: 500px;margin-bottom: 30px"></div>
+        <div class="full-length-grid second-grid" id="chart_div" style="width: 900px; height: 500px">
+        </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
