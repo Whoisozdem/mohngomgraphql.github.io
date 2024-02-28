@@ -222,7 +222,7 @@ function UserLevel(level) {
   else if (level < 40) developerLevel = 'Assistant Developer';
   else if (level < 50) developerLevel = 'Basic Developer';
   else if (level < 60) developerLevel = 'Junior Developer';
-  return `Level: ${level} ${developerLevel}`.trim();
+  return `${level} ${developerLevel}`.trim();
 }
 
 
@@ -244,7 +244,7 @@ function UserDatas(user) {
   nameElement.innerHTML = `<span style="color: orange;">FullName:</span> ${user.attrs.firstName} ${user.attrs.lastName}`;
   // Set the user campus
   var campusElement = document.getElementById("campus");
-  campusElement.innerHTML = `<span style="color: orange;">Campus:</span> ${UserLevel(user.level)}`;
+  campusElement.innerHTML = `<span style="color: orange;">Level:</span> ${UserLevel(user.level)}`;
   // Set the user age and country
   var fromElement = document.getElementById("from");
   fromElement.innerHTML = `<span style="color: orange;">Age:</span> ${RealAge(user.attrs.dateOfBirth)} Years old from ${user.attrs.country}`;
